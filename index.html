@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <audio id="musicaFondo" src="audios/audiodefondo.mp3" loop autoplay style="display:none"></audio>
+    <audio id="audiogolpe" src="audios/golpe.mp3"></audio>
+</head>
+<body>
+    <div class="area" role="application" aria-label="Laberinto canvas">
+        <canvas id="lienzojuego" width="1200" height="800" style="position: absolute;  z-index: 1;"></canvas>
+        <canvas id="lienzofondo" width="1200" height="800" style="position: absolute;  z-index: 0;"></canvas>
+        <canvas id="lienzooscuridad" width="1200" height="800" style="position: absolute;  z-index: 2;"></canvas>
+    </div>
+    <script src="js/logica.js"></script>
+</body>
+</html>
